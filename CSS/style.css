@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
+
+.logo{
+    position:sticky
+    padding-top: 10px;
+    margin-left: 10px;
+    width:6%; 
+}
+body {
+    background-color: #bacbdb;
+    background-image: radial-gradient(circle at 50% -3.03%, #aabfc8 0, #89a8b7 25%, #648fa4 50%, #3c7792 75%, #006182 100%);
+}
+
+h1 {
+    padding-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 60px;
+    
+    text-align: center;
+}
+
+footer {
+    padding-top: 20px;
+    text-align: center;
+}
+
+.descripcion,
+label {
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+}
+
+.container {
+    height: 500px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.text-box1 {
+    width: 50%;
+    float: left;
+    display: grid;
+    place-items: center;
+   
+}
+.textarea{
+    background-image: radial-gradient(circle at 50% -3.03%, #b8c4a4 0, #b3c5a7 4.55%, #afc6aa 9.09%, #aac7ad 13.64%, #a6c8b1 18.18%, #a2c9b5 22.73%, #9ec9b9 27.27%, #9bc9bd 31.82%, #98c9c1 36.36%, #96c9c6 40.91%, #95c9ca 45.45%, #94c9ce 50%, #94c9d2 54.55%, #95c8d5 59.09%, #97c7d8 63.64%, #9ac6db 68.18%, #9ec5dd 72.73%, #a2c4df 77.27%, #a6c3e0 81.82%, #abc2e0 86.36%, #b1c0e0 90.91%, #b6bfe0 95.45%, #bcbddf 100%);
+    border: none;
+}
+
+.text-box2 {
+
+    width: 50%;
+    float: right;
+    display: grid;
+    place-items: center;
+ 
+}
+
+#input-text,
+#encrypted-text {
+    width: 80%;
+    border-radius: 4px;
+}
+
+#boton-encriptar,
+#boton-desencriptar,
+#boton-copiar {
+    position: flex;
+    width: 181px;
+    height: 37px;
+    background: #21235b;
+    border-radius: 10px;
+    font-family: "Roboto", sans-serif;
+}
+
+
+/* CSS para movil */
+
+@media screen and (max-width: 480px) {
+    .text-box1, .text-box2{
+        width: 100%;
+    }
+
+    .text-box1 > label, .text-box2 > label{
+        margin: 1em;
+    }
+
+    #boton-desencriptar, #boton-copiar{
+        margin-bottom: 1em;
+    }
+}
+
+/* Tablet */
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .text-box1, .text-box2{
+        width: 100%;
+    }
+
+    .text-box1 > label, .text-box2 > label{
+        margin: 1em;
+    }
+
+    #boton-desencriptar, #boton-copiar{
+        margin-bottom: 1em;
+    }
+}
